@@ -60,7 +60,9 @@ public class Main {
 
 
                 inf.write(new FileWriter("src/xmireader/onto.txt"));
-            } catch(Exception e){}
+            } catch(Exception e){
+                e.printStackTrace();
+            }
 
     }
 }
