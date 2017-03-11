@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7a6419b1-2d30-4bb7-9742-a400580fc9aa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/XMIReader/xmireader/Main.class" afterPath="$PROJECT_DIR$/out/production/XMIReader/xmireader/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/XMIReader.ipr" afterPath="$PROJECT_DIR$/XMIReader.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/XMIReader.iws" afterPath="$PROJECT_DIR$/XMIReader.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmireader/Main.java" afterPath="$PROJECT_DIR$/src/xmireader/Main.java" />
     </list>
     <ignored path="XMIReader.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -742,12 +740,20 @@
       <option name="presentableId" value="Default" />
       <updated>1489256733634</updated>
       <workItem from="1489256738924" duration="245000" />
-      <workItem from="1489257828561" duration="1657000" />
+      <workItem from="1489257828561" duration="1681000" />
     </task>
+    <task id="LOCAL-00001" summary="Minor changes">
+      <created>1489259540974</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1489259540974</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1902000" />
+    <option name="totallyTimeSpent" value="1926000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="977" extended-state="6" />
@@ -794,6 +800,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
+    <MESSAGE value="Minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
