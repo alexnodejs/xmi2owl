@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/activitydiagram/element
+END
+Element.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/activitydiagram/element/Element.java
+END
+Activity.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/activitydiagram/element/Activity.java
+END
+Decision.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/activitydiagram/element/Decision.java
+END
+FinalNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/activitydiagram/element/FinalNode.java
+END
+Join.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/activitydiagram/element/Join.java
+END
+InitialNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/activitydiagram/element/InitialNode.java
+END
+Merge.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/activitydiagram/element/Merge.java
+END
+Type.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/activitydiagram/element/Type.java
+END
+Fork.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/activitydiagram/element/Fork.java
+END
+Edge.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/activitydiagram/element/Edge.java
+END
+Node.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/activitydiagram/element/Node.java
+END
+Condition.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/activitydiagram/element/Condition.java
+END

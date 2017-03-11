@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_EnMjsLweEd6_2eb3zswQKg" name="usecase">
+  <elementImport xmi:id="_EqDDYLweEd6_2eb3zswQKg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_EqDDYbweEd6_2eb3zswQKg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_EqDDYrweEd6_2eb3zswQKg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#UnlimitedNatural"/>
+  </elementImport>
+  <elementImport xmi:id="_EqDqcLweEd6_2eb3zswQKg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Wp7lUEiEEd-5pei7kYFrIw" name="je rozsireny">
+    <extensionPoint xmi:id="_QJDnYEiGEd-5pei7kYFrIw" name="point"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_W-fgEEiEEd-5pei7kYFrIw" name="rozsiruje">
+    <extend xmi:id="_XlsC8EiEEd-5pei7kYFrIw" extendedCase="_Wp7lUEiEEd-5pei7kYFrIw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_fG_4QEiEEd-5pei7kYFrIw" name="UseCase"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_fdpdsEiEEd-5pei7kYFrIw" name="UseCase1">
+    <include xmi:id="_f88BwEiEEd-5pei7kYFrIw" addition="_fG_4QEiEEd-5pei7kYFrIw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_6rPx4E-fEd-cUqumelXTAQ" name="Actor"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_7OH1cE-fEd-cUqumelXTAQ" name="Actor1">
+    <generalization xmi:id="_8B-UQE-fEd-cUqumelXTAQ" general="_6rPx4E-fEd-cUqumelXTAQ"/>
+    <generalization xmi:id="_1ErDkE-iEd-cUqumelXTAQ" general="_0bGiIE-iEd-cUqumelXTAQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8pK3IE-fEd-cUqumelXTAQ" memberEnd="_8pK3IU-fEd-cUqumelXTAQ _8pK3JE-fEd-cUqumelXTAQ" navigableOwnedEnd="_8pK3JE-fEd-cUqumelXTAQ">
+    <ownedEnd xmi:id="_8pK3IU-fEd-cUqumelXTAQ" name="src" type="_6rPx4E-fEd-cUqumelXTAQ" association="_8pK3IE-fEd-cUqumelXTAQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8pK3I0-fEd-cUqumelXTAQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8pK3Ik-fEd-cUqumelXTAQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_8pK3JE-fEd-cUqumelXTAQ" name="log in" type="_Wp7lUEiEEd-5pei7kYFrIw" association="_8pK3IE-fEd-cUqumelXTAQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8pK3Jk-fEd-cUqumelXTAQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8pK3JU-fEd-cUqumelXTAQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-36moE-fEd-cUqumelXTAQ" memberEnd="_-36moU-fEd-cUqumelXTAQ _-36mpE-fEd-cUqumelXTAQ" navigableOwnedEnd="_-36mpE-fEd-cUqumelXTAQ">
+    <ownedEnd xmi:id="_-36moU-fEd-cUqumelXTAQ" name="src" type="_6rPx4E-fEd-cUqumelXTAQ" association="_-36moE-fEd-cUqumelXTAQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-36mo0-fEd-cUqumelXTAQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-36mok-fEd-cUqumelXTAQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_-36mpE-fEd-cUqumelXTAQ" name="toto zmaze hned" type="_fG_4QEiEEd-5pei7kYFrIw" association="_-36moE-fEd-cUqumelXTAQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-36mpk-fEd-cUqumelXTAQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-36mpU-fEd-cUqumelXTAQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_0bGiIE-iEd-cUqumelXTAQ" name="Actor2"/>
+</uml:Package>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/usecasediagram
+END
+UseCaseDiagram.class
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/usecasediagram/UseCaseDiagram.class
+END
+UCDRelationship.class
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/usecasediagram/UCDRelationship.class
+END
+Relationship.class
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/usecasediagram/Relationship.class
+END
+UCDElement.class
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/usecasediagram/UCDElement.class
+END

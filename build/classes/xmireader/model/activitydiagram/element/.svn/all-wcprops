@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/activitydiagram/element
+END
+Join.class
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/activitydiagram/element/Join.class
+END
+InitialNode.class
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/activitydiagram/element/InitialNode.class
+END
+FinalNode.class
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/activitydiagram/element/FinalNode.class
+END
+Merge.class
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/activitydiagram/element/Merge.class
+END
+Fork.class
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/activitydiagram/element/Fork.class
+END
+Type.class
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/activitydiagram/element/Type.class
+END
+Edge.class
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/activitydiagram/element/Edge.class
+END
+Node.class
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/activitydiagram/element/Node.class
+END
+Condition.class
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/activitydiagram/element/Condition.class
+END
+Element.class
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/activitydiagram/element/Element.class
+END
+Activity.class
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/activitydiagram/element/Activity.class
+END
+Decision.class
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/activitydiagram/element/Decision.class
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/6/trunk/XMIReader/src/xmireader/model/classdiagram/element
+END
+Entity.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/6/trunk/XMIReader/src/xmireader/model/classdiagram/element/Entity.java
+END
+Association.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/6/trunk/XMIReader/src/xmireader/model/classdiagram/element/Association.java
+END
+CDClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/6/trunk/XMIReader/src/xmireader/model/classdiagram/element/CDClass.java
+END
+VisibilityKind.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/classdiagram/element/VisibilityKind.java
+END
+Parameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/classdiagram/element/Parameter.java
+END
+Interface.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/6/trunk/XMIReader/src/xmireader/model/classdiagram/element/Interface.java
+END
+Method.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/classdiagram/element/Method.java
+END
+Type.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/6/trunk/XMIReader/src/xmireader/model/classdiagram/element/Type.java
+END
+Comment.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/classdiagram/element/Comment.java
+END
+Attribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/classdiagram/element/Attribute.java
+END
+ParameterDirectionKind.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/classdiagram/element/ParameterDirectionKind.java
+END
+Element.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/classdiagram/element/Element.java
+END

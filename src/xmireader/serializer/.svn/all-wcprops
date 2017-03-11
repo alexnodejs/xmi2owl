@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/5/trunk/XMIReader/src/xmireader/serializer
+END
+BehavioralDiagramsSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/5/trunk/XMIReader/src/xmireader/serializer/BehavioralDiagramsSerializer.java
+END
+CommunicationDiagramSerializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/5/trunk/XMIReader/src/xmireader/serializer/CommunicationDiagramSerializer.java
+END

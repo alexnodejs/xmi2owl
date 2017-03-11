@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/statemachinediagram/element
+END
+Element.class
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/statemachinediagram/element/Element.class
+END
+Transition.class
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/statemachinediagram/element/Transition.class
+END
+State.class
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/statemachinediagram/element/State.class
+END

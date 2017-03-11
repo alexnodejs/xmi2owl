@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/usecasediagram/element
+END
+Type.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/usecasediagram/element/Type.java
+END
+Include.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/usecasediagram/element/Include.java
+END
+OwnedEnd.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/usecasediagram/element/OwnedEnd.java
+END
+ExtensionPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/usecasediagram/element/ExtensionPoint.java
+END
+Extend.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/usecasediagram/element/Extend.java
+END
+Actor.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/usecasediagram/element/Actor.java
+END
+UseCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/usecasediagram/element/UseCase.java
+END
+Element.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/usecasediagram/element/Element.java
+END
+Generalization.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/usecasediagram/element/Generalization.java
+END
+Association.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/2/trunk/XMIReader/src/xmireader/model/usecasediagram/element/Association.java
+END

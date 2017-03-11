@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_ANG8gLr2Ed6UaZTn55lYcw" name="SampleModel">
+  <packagedElement xmi:type="uml:Class" xmi:id="_aDbaQLr2Ed6UaZTn55lYcw" name="SomeClassA">
+    <ownedAttribute xmi:id="_EhyTsLwoEd6IB8S4oemp8Q" name="id" aggregation="composite"/>
+    <ownedAttribute xmi:id="_mpPPQLwqEd6IB8S4oemp8Q" name="nexn" type="_SUu0QLwqEd6IB8S4oemp8Q" aggregation="composite"/>
+    <ownedOperation xmi:id="_P5LCsLwoEd6IB8S4oemp8Q" name="int operation">
+      <ownedParameter xmi:id="__ABM4LwqEd6IB8S4oemp8Q" direction="return"/>
+      <ownedParameter xmi:id="__ACbALwqEd6IB8S4oemp8Q" name="i" type="_KeAIkLwqEd6IB8S4oemp8Q"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_cxPrYLr2Ed6UaZTn55lYcw" name="OtherClassB"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m5E3ALr2Ed6UaZTn55lYcw" memberEnd="_m5H6ULr2Ed6UaZTn55lYcw _m5UHkLr2Ed6UaZTn55lYcw">
+    <ownedEnd xmi:id="_m5H6ULr2Ed6UaZTn55lYcw" name="src" type="_cxPrYLr2Ed6UaZTn55lYcw" association="_m5E3ALr2Ed6UaZTn55lYcw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m5TggLr2Ed6UaZTn55lYcw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m5SSYLr2Ed6UaZTn55lYcw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_m5UHkLr2Ed6UaZTn55lYcw" name="dst" type="_aDbaQLr2Ed6UaZTn55lYcw" association="_m5E3ALr2Ed6UaZTn55lYcw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_m5ftwLr2Ed6UaZTn55lYcw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m5fGsLr2Ed6UaZTn55lYcw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_KeAIkLwqEd6IB8S4oemp8Q" name="int"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_SUu0QLwqEd6IB8S4oemp8Q" name="double"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_GXMbkSRyEd-OH_Gms0LIRw" name="Class">
+    <ownedTemplateSignature xmi:type="uml:RedefinableTemplateSignature" xmi:id="_U_pSsCRyEd-OH_Gms0LIRw"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_TqvVQCRyEd-OH_Gms0LIRw" name="PortP" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_HHNjQCRyEd-OH_Gms0LIRw" name="EnumerationClass">
+    <ownedAttribute xmi:id="_MABFQCRyEd-OH_Gms0LIRw" name="PropertyA" aggregation="composite"/>
+    <ownedOperation xmi:id="_Nt9NwCRyEd-OH_Gms0LIRw" name="operationA">
+      <ownedParameter xmi:id="_OhnfUCRyEd-OH_Gms0LIRw" direction="return"/>
+    </ownedOperation>
+    <ownedLiteral xmi:id="_KG8DwCRyEd-OH_Gms0LIRw" name="LiteralA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ByrnMCR1Ed-OH_Gms0LIRw" name="SamplePackage">
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_H7OSwCR1Ed-OH_Gms0LIRw" name="AssociationClass"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_qjAJoCR2Ed-OH_Gms0LIRw" name="SampleComponent"/>
+</uml:Model>
+

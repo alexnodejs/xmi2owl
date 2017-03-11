@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/6/trunk/XMIReader/build/classes/xmireader/parser
+END
+MethodParser.class
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/parser/MethodParser.class
+END
+MethodParameterParser.class
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/parser/MethodParameterParser.class
+END
+ActivityDiagramParser.class
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/5/trunk/XMIReader/build/classes/xmireader/parser/ActivityDiagramParser.class
+END
+AttributeParser.class
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/parser/AttributeParser.class
+END
+OwnedEndParser.class
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/parser/OwnedEndParser.class
+END
+GenericElementParser.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/parser/GenericElementParser.class
+END
+ClassDiagramParser.class
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/6/trunk/XMIReader/build/classes/xmireader/parser/ClassDiagramParser.class
+END
+StateMachineDiagramParser.class
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/5/trunk/XMIReader/build/classes/xmireader/parser/StateMachineDiagramParser.class
+END
+SupportParser.class
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/parser/SupportParser.class
+END
+GenericParser.class
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/parser/GenericParser.class
+END
+UseCaseDiagramParser.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/parser/UseCaseDiagramParser.class
+END

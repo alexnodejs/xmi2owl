@@ -1,0 +1,353 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/2/trunk/XMIReader/lib
+END
+commons-logging-api-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2/trunk/XMIReader/lib/commons-logging-api-1.1.1.jar
+END
+de.incunabulum.owl2java.core_1.0.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/2/trunk/XMIReader/lib/de.incunabulum.owl2java.core_1.0.2.jar
+END
+de.incunabulum.owl2java.core_1.0.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/2/trunk/XMIReader/lib/de.incunabulum.owl2java.core_1.0.4.jar
+END
+arq-extra.jar
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/XMIReader/lib/arq-extra.jar
+END
+slf4j-log4j12-1.5.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/XMIReader/lib/slf4j-log4j12-1.5.6.jar
+END
+commons-codec-1.4-sources.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2/trunk/XMIReader/lib/commons-codec-1.4-sources.jar
+END
+svnant.jar
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/2/trunk/XMIReader/lib/svnant.jar
+END
+de.incunabulum.owl2java.plugin_1.0.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/2/trunk/XMIReader/lib/de.incunabulum.owl2java.plugin_1.0.4.jar
+END
+jgraph.jar
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/2/trunk/XMIReader/lib/jgraph.jar
+END
+commons-logging-1.1.1-sources.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/2/trunk/XMIReader/lib/commons-logging-1.1.1-sources.jar
+END
+jenatest.jar
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2/trunk/XMIReader/lib/jenatest.jar
+END
+jena-2.6.2-tests.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2/trunk/XMIReader/lib/jena-2.6.2-tests.jar
+END
+stax-api-1.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2/trunk/XMIReader/lib/stax-api-1.0.1.jar
+END
+commons-collections-testframework-3.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/2/trunk/XMIReader/lib/commons-collections-testframework-3.2.1.jar
+END
+concurrent.jar
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/XMIReader/lib/concurrent.jar
+END
+icu4j-3.4.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/XMIReader/lib/icu4j-3.4.4.jar
+END
+iri.jar
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/2/trunk/XMIReader/lib/iri.jar
+END
+arq.jar
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/2/trunk/XMIReader/lib/arq.jar
+END
+commons-collections-3.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2/trunk/XMIReader/lib/commons-collections-3.2.1.jar
+END
+arq-2.8.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/XMIReader/lib/arq-2.8.1.jar
+END
+jgrapht-jdk1.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2/trunk/XMIReader/lib/jgrapht-jdk1.5.jar
+END
+jgrapht-jdk1.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2/trunk/XMIReader/lib/jgrapht-jdk1.6.jar
+END
+commons-collections-3.2.1-javadoc.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/2/trunk/XMIReader/lib/commons-collections-3.2.1-javadoc.jar
+END
+junit-4.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/XMIReader/lib/junit-4.5.jar
+END
+lucene-core-2.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/XMIReader/lib/lucene-core-2.2.0.jar
+END
+log4j-1.2.12.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/XMIReader/lib/log4j-1.2.12.jar
+END
+commons-logging-tests.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2/trunk/XMIReader/lib/commons-logging-tests.jar
+END
+log4j-1.2.13.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/XMIReader/lib/log4j-1.2.13.jar
+END
+lucene-core-2.3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/XMIReader/lib/lucene-core-2.3.1.jar
+END
+log4j-1.2.15.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/XMIReader/lib/log4j-1.2.15.jar
+END
+lib-readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/XMIReader/lib/lib-readme.txt
+END
+velocity-dep-1.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2/trunk/XMIReader/lib/velocity-dep-1.5.jar
+END
+svnClientAdapter.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2/trunk/XMIReader/lib/svnClientAdapter.jar
+END
+commons-collections-3.2.1-sources.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/2/trunk/XMIReader/lib/commons-collections-3.2.1-sources.jar
+END
+json.jar
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/2/trunk/XMIReader/lib/json.jar
+END
+xercesImpl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/XMIReader/lib/xercesImpl.jar
+END
+jena.jar
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/2/trunk/XMIReader/lib/jena.jar
+END
+xercesImpl-2.7.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2/trunk/XMIReader/lib/xercesImpl-2.7.1.jar
+END
+wstx-asl-3.0.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2/trunk/XMIReader/lib/wstx-asl-3.0.0.jar
+END
+xmlunit1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/XMIReader/lib/xmlunit1.0.jar
+END
+jena-2.6.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/XMIReader/lib/jena-2.6.2.jar
+END
+stax-api-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/XMIReader/lib/stax-api-1.0.jar
+END
+icu4j_3_4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/XMIReader/lib/icu4j_3_4.jar
+END
+jena-2.6.2-javadoc.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/XMIReader/lib/jena-2.6.2-javadoc.jar
+END
+iri-0.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/2/trunk/XMIReader/lib/iri-0.7.jar
+END
+commons-codec-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/XMIReader/lib/commons-codec-1.4.jar
+END
+antlr-2.7.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/XMIReader/lib/antlr-2.7.5.jar
+END
+wstx-asl-3.2.9.jar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2/trunk/XMIReader/lib/wstx-asl-3.2.9.jar
+END
+junit.jar
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/2/trunk/XMIReader/lib/junit.jar
+END
+TGGraphLayout.jar
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/2/trunk/XMIReader/lib/TGGraphLayout.jar
+END
+xml-apis.jar
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2/trunk/XMIReader/lib/xml-apis.jar
+END
+commons-logging-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2/trunk/XMIReader/lib/commons-logging-1.1.1.jar
+END
+commons-codec-1.4-javadoc.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2/trunk/XMIReader/lib/commons-codec-1.4-javadoc.jar
+END
+commons-logging-adapters-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/2/trunk/XMIReader/lib/commons-logging-adapters-1.1.1.jar
+END
+slf4j-api-1.5.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2/trunk/XMIReader/lib/slf4j-api-1.5.6.jar
+END
+velocity-1.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/XMIReader/lib/velocity-1.5.jar
+END
+commons-logging-1.1.1-javadoc.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/2/trunk/XMIReader/lib/commons-logging-1.1.1-javadoc.jar
+END
+jena-2.6.2-sources.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/XMIReader/lib/jena-2.6.2-sources.jar
+END

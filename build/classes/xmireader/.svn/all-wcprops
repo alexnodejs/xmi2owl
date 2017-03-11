@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/6/trunk/XMIReader/build/classes/xmireader
+END
+XMIConstants.class
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/6/trunk/XMIReader/build/classes/xmireader/XMIConstants.class
+END
+test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/test.xml
+END
+default.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/default.xml
+END
+usecase.uml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/usecase.uml
+END
+UmlClass.class
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/UmlClass.class
+END
+Main.class
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/4/trunk/XMIReader/build/classes/xmireader/Main.class
+END
+activity.uml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/activity.uml
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/6/trunk/XMIReader/build/classes/xmireader/model/classdiagram
+END
+ClassDiagram.class
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/6/trunk/XMIReader/build/classes/xmireader/model/classdiagram/ClassDiagram.class
+END
+CDElement.class
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/classdiagram/CDElement.class
+END
+Relationship.class
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/6/trunk/XMIReader/build/classes/xmireader/model/classdiagram/Relationship.class
+END
+Constraint.class
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/2/trunk/XMIReader/build/classes/xmireader/model/classdiagram/Constraint.class
+END
