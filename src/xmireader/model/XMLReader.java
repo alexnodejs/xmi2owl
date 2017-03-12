@@ -19,11 +19,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 import xmireader.model.generic.Model;
-import xmireader.parser.UseCaseDiagramParser;
-import xmireader.parser.ActivityDiagramParser;
-import xmireader.parser.GenericParser;
-import xmireader.parser.StateMachineDiagramParser;
-import xmireader.parser.CommunicationDiagramParser;
+import xmireader.parser.*;
 
 /**
  *
@@ -52,9 +48,11 @@ public class XMLReader {
     }
 
     public List<Model> parse() {
-        parsers.add(new CommunicationDiagramParser());  //TODO: remove from here!
+        //parsers.add(new CommunicationDiagramParser());  //TODO: remove from here!
+        parsers.add(new ClassDiagramParser());
         List<Model> parsedModels = new ArrayList<Model>();
         for (GenericParser p : getParsers()) {
+            //System.out.println("XMI parsing: " + p);
             parsedModels.add(p.parse(d));
         }
         return parsedModels;

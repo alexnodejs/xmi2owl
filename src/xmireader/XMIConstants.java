@@ -31,6 +31,6 @@ public class XMIConstants {
     public static final String XMI_UML_FINALSTATE_TYPE = "uml:FinalState";
     public static final String XMI_UML_MOS_TYPE = "uml:MessageOccurrenceSpecification";
     
-    public static final String XMI_ID = "xmi:id";
+    public static final String XMI_ID = "xmi.id";//"xmi:id";
     public static final String XMI_TYPE = "xmi:type";
 }

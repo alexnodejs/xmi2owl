@@ -33,7 +33,7 @@ public class CDClass extends Entity {
         sb.append("\tAttributes:\n");
         for (Attribute a : getAttributes()) {
             sb.append("\t\t")
-                    .append(a.toString())
+                    .append(a.getName().toString())
                     .append("\n");
         }
 

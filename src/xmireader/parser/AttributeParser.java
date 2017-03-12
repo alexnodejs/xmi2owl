@@ -15,7 +15,8 @@ import xmireader.model.classdiagram.element.Attribute;
 public class AttributeParser extends GenericElementParser {
 
     public String getNodeName() {
-        return "ownedAttribute";
+        return "UML:Attribute";
+        //return "ownedAttribute";
     }
 
     public Attribute getElement(Node n) {
