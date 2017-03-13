@@ -5,6 +5,7 @@ import com.hp.hpl.jena.ontology.OntClass;
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
 import com.hp.hpl.jena.rdf.model.ModelFactory;
+import com.hp.hpl.jena.vocabulary.VCARD;
 import org.w3c.dom.Node;
 import xmireader.URIConstants;
 import xmireader.XMIConstants;
@@ -19,60 +20,52 @@ import xmireader.parser.GenericParser;
 import java.io.FileWriter;
 import java.util.List;
 
+import xmireader.model.classdiagram.element.*;
 /**
  * Created by svitlanamoiseyenko on 3/12/17.
  */
 public class OntologyBuilder {
 
     private List<Model> models;
+    OntModel model;
 
     public OntologyBuilder(List<Model> models) {
         this.models = models;
+        this.model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
     }
 
-//    public void getXMLClasses() {
-//
-//        System.out.println("reader: " + models.toString());
-//        for (Model model: models) {
-//          System.out.println("model: " + model.getClass());
-//          ClassDiagram classDiagram = (ClassDiagram)model;
-//            for(GenericElement e: classDiagram.getElements().values()){
-//                CDClass cdClass = (CDClass)e;
-//                System.out.println("classDiagram: " + cdClass.getName());
-//                System.out.println("classDiagram: " + cdClass.getAttributes());
-//            }
-//
-//        }
-//
-//
-//    }
+    private void buildOntology() {
 
-    public void buildOntology() {
+        System.out.println("reader: " + models.toString());
+        for (Model model: models) {
+          System.out.println("model: " + model.getClass());
+          ClassDiagram classDiagram = (ClassDiagram)model;
+            for(GenericElement e: classDiagram.getElements().values()){
+                CDClass cdClass = (CDClass)e;
+                OntClass ontoClass = this.model.createClass(URIConstants.NS + cdClass.getName());
 
-        //getXMLClasses();
+                System.out.println("classDiagram: " + cdClass.getName());
+                buildAttributes(cdClass, ontoClass);
+            }
+        }
+    }
+
+    private void buildAttributes(CDClass cdClass, OntClass ontoClass) {
+        List<Attribute> attributes = cdClass.getAttributes();
+        for(Attribute attribute: attributes) {
+            System.out.println("attribute: " + attribute.getName());
+            ontoClass.addProperty(VCARD.Extadd, attribute.getName());//NPROPERTIES
+        }
+    }
+
+    public void performConvetring() {
+
+        buildOntology();
 
         try {
-            OntModel model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
-            String filenameOWL2 = "src/xmireader/dump/test11.owl";
+
+            String filenameOWL2 = OntoConstants.dirname + OntoConstants.filename + OntoConstants.rdfExtension;
             //base.read(filenameOWL2,  URIConstants.URI);
-
-//            OntClass researcher = model.createClass(URIConstants.NS + "Researcher");
-//            // create a dummy paper for this example
-//            OntClass paper = model.getOntClass( URIConstants.NS + "Message" );
-//            Individual p1 = model.createIndividual( URIConstants.NS + "paper1", paper );
-
-            for (Model xmimodel: models) {
-                System.out.println("model: " + xmimodel.getClass());
-                ClassDiagram classDiagram = (ClassDiagram)xmimodel;
-                for(GenericElement e: classDiagram.getElements().values()){
-                    CDClass cdClass = (CDClass)e;
-                    OntClass ontoClass = model.createClass(URIConstants.NS + cdClass.getName());
-                    System.out.println("classDiagram: " + cdClass.getName());
-                    System.out.println("classDiagram: " + cdClass.getAttributes());
-                }
-
-            }
-
 
             model.write(new FileWriter(filenameOWL2));
             //FileWriter out = null;

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8' ?>
-<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Mar 13 04:13:31 EET 2017'>
+<XMI xmi.version = '1.2' xmlns:UML = 'org.omg.xmi.namespace.UML' timestamp = 'Mon Mar 13 05:46:48 EET 2017'>
   <XMI.header>    <XMI.documentation>
       <XMI.exporter>ArgoUML (using Netbeans XMI Writer version 1.0)</XMI.exporter>
       <XMI.exporterVersion>PRE-0.35.2(6) revised on $Date$ </XMI.exporterVersion>
@@ -27,7 +27,7 @@
               ownerScope = 'instance'/>
           </UML:Classifier.feature>
         </UML:Class>
-        <UML:Class xmi.id = 'Body_ClassID4' name = 'Bodyes' visibility = 'public'
+        <UML:Class xmi.id = 'Body_ClassID4' name = 'Body' visibility = 'public'
           isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'
           isActive = 'false'>
           <UML:Classifier.feature>
@@ -55,7 +55,7 @@
             <UML:Generalization xmi.idref = 'genTeethPrey14'/>
           </UML:GeneralizableElement.generalization>
         </UML:Class>
-        <UML:Class xmi.id = 'Prey_ClassID8' name = 'Prey' visibility = 'public'
+        <UML:Class xmi.id = 'Prey_ClassID8' name = 'Preys' visibility = 'public'
           isSpecification = 'false' isRoot = 'false' isLeaf = 'false' isAbstract = 'false'
           isActive = 'false'>
           <UML:Classifier.feature>
