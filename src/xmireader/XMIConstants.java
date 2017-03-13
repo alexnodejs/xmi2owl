@@ -11,6 +11,8 @@ package xmireader;
  */
 public class XMIConstants {
 
+    public static final String XMI_UML_CLASS_NODE = "UML:Class";
+
     public static final String XMI_UML_CLASS_TYPE = "uml:Class";
     public static final String XMI_UML_INTERFACE_TYPE = "uml:Interface";
     public static final String XMI_UML_USECASE_TYPE = "uml:UseCase";

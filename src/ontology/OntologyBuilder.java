@@ -53,7 +53,7 @@ public class OntologyBuilder {
 
         try {
             OntModel model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM);
-            String filenameOWL2 = "src/xmireader/dump/test3.owl";
+            String filenameOWL2 = "src/xmireader/dump/test11.owl";
             //base.read(filenameOWL2,  URIConstants.URI);
 
 //            OntClass researcher = model.createClass(URIConstants.NS + "Researcher");

@@ -39,16 +39,20 @@ public abstract class GenericParser {
 //        for(int i=0;i<d.getChildNodes().getLength();i++){
 //            addNode(d.getChildNodes().item(i));
 //        }
+
         Node n = getNode();
+        System.out.println("getNodesByXMIType: " + xmiType + " node: " + n);
 
         List<Node> nodes = new ArrayList<Node>();
         for(int i=0;i<n.getChildNodes().getLength();i++){
+            System.out.println("child: " + n.getChildNodes().item(i));
             q.add(n.getChildNodes().item(i));
         }
         if (n.hasAttributes() && n.getAttributes().getNamedItem(XMIConstants.XMI_TYPE) != null &&
                 n.getAttributes().getNamedItem(XMIConstants.XMI_TYPE).getNodeValue().equals(xmiType)) {
-            if(n.getAttributes().getNamedItem("name")!=null)
+            if(n.getAttributes().getNamedItem("name")!=null) {
                 System.out.println("Found class with name " + n.getAttributes().getNamedItem("name"));
+            }
 
             nodes.add(n);
         }
@@ -59,17 +63,40 @@ public abstract class GenericParser {
         return nodes;
     }
 
+    public List<Node> getClassNodesByName(String name){
+        Node n = getNode();
+        ArrayList<Node> nodes = new ArrayList<Node>();
+
+        for(int i=0;i<n.getChildNodes().getLength();i++){
+            q.add(n.getChildNodes().item(i));
+        }
+
+        if (n.getNodeName().equals(name)) {
+            if(n.getAttributes().getNamedItem("name")!=null) {
+                System.out.println("getClassNodesByName Found class with name " + n.getAttributes().getNamedItem("name"));
+                nodes.add(n);
+            }
+        }
+
+        if(!q.isEmpty()){
+            nodes.addAll(getClassNodesByName(name));
+        }
+        return nodes;
+    }
+
+
     public List<Node> getNodesByName(String name){
         Node n = getNode();
 
-        System.out.println("getNodesByName: " + name);
         ArrayList<Node> nodes = new ArrayList<Node>();
         for(int i=0;i<n.getChildNodes().getLength();i++){
             q.add(n.getChildNodes().item(i));
         }
+
         if (n.getNodeName().equals(name)) {
-            if(n.getAttributes().getNamedItem("generalization") != null)
-            System.out.println("getNodesByName Found class with name " + n.getAttributes().getNamedItem("name"));
+            if(n.getAttributes().getNamedItem("generalization") != null) {
+                System.out.println("getNodesByName Found class with name " + n.getAttributes().getNamedItem("name"));
+            }
             nodes.add(n);
         }
 
@@ -78,6 +105,7 @@ public abstract class GenericParser {
         }
         
         if(!q.isEmpty()){
+            System.out.println("getNodesByName q not empty: ");
             nodes.addAll(getNodesByName(name));
         }
         return nodes;

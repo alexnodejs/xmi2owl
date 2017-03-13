@@ -50,7 +50,8 @@ public class Main {
         //generator.setCreateTestClass(false);
 
 
-        String filename = "src/xmireader/dump/test_outputparser.xmi";
+        String filename = "src/xmireader/dump/test_5xmi.xmi";
+        //test_outputparser.xmi";//
         //"src/xmireader/dump/class.uml";
 
         XMLReader reader = new XMLReader(filename);

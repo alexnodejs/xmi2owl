@@ -31,14 +31,16 @@ public class ClassDiagramParser extends GenericParser {
         initializeNodes(d);
         parseClasses(d, cd);
         initializeNodes(d);
-        parseInterfaces(d, cd);
+        //parseInterfaces(d, cd);
         initializeNodes(d);
         parseRelations(d, cd);
         return cd;
     }
 
     private void parseClasses(Document d, ClassDiagram cd) throws DOMException {
-        List<Node> classes = getNodesByXMIType(XMIConstants.XMI_UML_CLASS_TYPE);
+        System.out.println("==== parseClasses ====");
+        //List<Node> classes = getNodesByXMIType(XMIConstants.XMI_UML_CLASS_TYPE);
+        List<Node> classes = getClassNodesByName(XMIConstants.XMI_UML_CLASS_NODE);
         for (Node c : classes) {
             String name = c.getAttributes().getNamedItem("name").getNodeValue();
             String id = c.getAttributes().getNamedItem(XMIConstants.XMI_ID).getNodeValue();
@@ -49,9 +51,12 @@ public class ClassDiagramParser extends GenericParser {
             x.setAttributes(attributes);
             cd.addClass(x);
         }
+
     }
 
+
     private void parseInterfaces(Document d, ClassDiagram cd) throws DOMException {
+        System.out.println("==== parseInterfaces ====");
         List<Node> interfaces = getNodesByXMIType(XMIConstants.XMI_UML_INTERFACE_TYPE);
         for (Node c : interfaces) {
             String name = c.getAttributes().getNamedItem("name").getNodeValue();
