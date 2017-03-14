@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XMI xmlns:UML="org.omg.xmi.namespace.UML" xmi.version="1.2">
+    <XMI.header>
+        <XMI.metamodel xmi.name="UML" xmi.version="1.4"/>
+    </XMI.header>
+    <XMI.content>
+        <UML:Model xmi.id="UML_model_1" name="NewModelUML" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+            <UML:Namespace.ownedElement>
+                <UML:Class visibility="public" isActive="false" xmi.id="Apple_ClassID0" name="Apple" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+                <UML:Class visibility="public" isActive="false" xmi.id="Technology Company_ClassID2" name="Technology Company" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+                    <UML:Classifier.feature>
+                        <UML:Attribute xmi.id="American2" name="American" visibility="private" isSpecification="false" ownerScope="instance"/>
+                        <UML:Attribute xmi.id="multinational2" name="multinational" visibility="private" isSpecification="false" ownerScope="instance"/>
+                    </UML:Classifier.feature>
+                </UML:Class>
+                <UML:Class visibility="public" isActive="false" xmi.id="Cupertino California_ClassID3" name="Cupertino California" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+                <UML:Class visibility="public" isActive="false" xmi.id="It_ClassID4" name="It" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+                <UML:Class visibility="public" isActive="false" xmi.id="Consumer Electronics_ClassID5" name="Consumer Electronics" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+                <UML:Class visibility="public" isActive="false" xmi.id="Computer Software_ClassID6" name="Computer Software" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+                <UML:Class visibility="public" isActive="false" xmi.id="Services_ClassID7" name="Services" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+                    <UML:Classifier.feature>
+                        <UML:Attribute xmi.id="online7" name="online" visibility="private" isSpecification="false" ownerScope="instance"/>
+                    </UML:Classifier.feature>
+                </UML:Class>
+                <UML:Association xmi.id="is_AssociationID8" name="is" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd xmi.id="_assocEndFor_Apple_ClassID08" visibility="public" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+                            <UML:AssociationEnd.participant>
+<UML:Class xmi.idref="Apple_ClassID0"/>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd xmi.id="_assocEndFor_Technology Company_ClassID28" visibility="public" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+                            <UML:AssociationEnd.participant>
+<UML:Class xmi.idref="Technology Company_ClassID2"/>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association xmi.id="_AssociationID9" name="" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd xmi.id="_assocEndFor_Technology Company_ClassID29" visibility="public" isNavigable="true" ordering="unordered" aggregation="aggregate" targetScope="instance" changeability="changeable" name="headquartered in" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+                            <UML:AssociationEnd.participant>
+<UML:Class xmi.idref="Technology Company_ClassID2"/>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd xmi.id="_assocEndFor_Cupertino California_ClassID39" visibility="public" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" name="" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+                            <UML:AssociationEnd.participant>
+<UML:Class xmi.idref="Cupertino California_ClassID3"/>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association xmi.id="sells_AssociationID10" name="sells" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd xmi.id="_assocEndFor_It_ClassID410" visibility="public" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+                            <UML:AssociationEnd.participant>
+<UML:Class xmi.idref="It_ClassID4"/>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd xmi.id="_assocEndFor_Consumer Electronics_ClassID510" visibility="public" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+                            <UML:AssociationEnd.participant>
+<UML:Class xmi.idref="Consumer Electronics_ClassID5"/>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association xmi.id="sells_AssociationID11" name="sells" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd xmi.id="_assocEndFor_It_ClassID411" visibility="public" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+                            <UML:AssociationEnd.participant>
+<UML:Class xmi.idref="It_ClassID4"/>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd xmi.id="_assocEndFor_Computer Software_ClassID611" visibility="public" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+                            <UML:AssociationEnd.participant>
+<UML:Class xmi.idref="Computer Software_ClassID6"/>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+                <UML:Association xmi.id="sells_AssociationID12" name="sells" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+                    <UML:Association.connection>
+                        <UML:AssociationEnd xmi.id="_assocEndFor_It_ClassID412" visibility="public" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+                            <UML:AssociationEnd.participant>
+<UML:Class xmi.idref="It_ClassID4"/>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                        <UML:AssociationEnd xmi.id="_assocEndFor_Services_ClassID712" visibility="public" isNavigable="true" ordering="unordered" aggregation="none" targetScope="instance" changeability="changeable" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+                            <UML:AssociationEnd.participant>
+<UML:Class xmi.idref="Services_ClassID7"/>
+                            </UML:AssociationEnd.participant>
+                        </UML:AssociationEnd>
+                    </UML:Association.connection>
+                </UML:Association>
+            </UML:Namespace.ownedElement>
+        </UML:Model>
+    </XMI.content>
+</XMI>

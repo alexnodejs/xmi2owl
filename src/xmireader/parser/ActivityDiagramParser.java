@@ -48,6 +48,7 @@ public class ActivityDiagramParser extends GenericParser {
         parseInitNodes(d, ad);
         initializeNodes(d);
         parseFinalNodes(d, ad);
+
         /*try{
         OntModel o = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM);
         o.read(new FileReader("src/xmireader/priklad.owl"), URIConstants.URI);

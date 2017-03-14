@@ -7,17 +7,23 @@ package xmireader.parser;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import org.w3c.dom.DOMException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import xmireader.XMIConstants;
 import xmireader.model.classdiagram.ClassDiagram;
+import xmireader.model.classdiagram.RelationshipType;
 import xmireader.model.generic.Model;
 import xmireader.model.classdiagram.element.CDClass;
 import xmireader.model.classdiagram.element.Method;
 import xmireader.model.classdiagram.element.Attribute;
 import xmireader.model.classdiagram.element.Element;
 import xmireader.model.classdiagram.element.Interface;
+
+import xmireader.model.classdiagram.element.Association;
+import xmireader.model.classdiagram.element.AssociationEnd;
+import xmireader.model.usecasediagram.element.OwnedEnd;
 
 /**
  *
@@ -33,7 +39,7 @@ public class ClassDiagramParser extends GenericParser {
         initializeNodes(d);
         //parseInterfaces(d, cd);
         initializeNodes(d);
-        parseRelations(d, cd);
+        parseAssociations(d, cd);
         return cd;
     }
 
@@ -86,7 +92,52 @@ public class ClassDiagramParser extends GenericParser {
         return parseGeneric(c, MethodParser.getInstance());
     }
 
-    private void parseRelations(Document d, ClassDiagram cd) {
-        //
+    private void parseAssociations(Document d, ClassDiagram cd) {
+        System.out.println("==== parseAssociations ====");
+        List<Node> associations = getNodesByName(XMIConstants.XMI_UML_ASSOCIATION_NODE);
+        for (Node a : associations) {
+            String name = a.getAttributes().getNamedItem("name").getNodeValue();
+            String id = a.getAttributes().getNamedItem(XMIConstants.XMI_ID).getNodeValue();
+
+            Association association = new Association(id, name);
+            List<AssociationEnd> associationEnds = parseAssociationEnd(a);
+            String assname = null;
+            for(AssociationEnd associationEnd : associationEnds){
+
+                switch (associationEnd.getType()) {
+                    case ASSOC_AGGREGATION:
+                        association.setType(associationEnd.getType());
+                        if(associationEnd.getSource()) {
+                            association.setSourceID(associationEnd.getRelatedClassID());
+                        } else {
+                            association.setDestinationID(associationEnd.getRelatedClassID());
+                        }
+                        if (assname == null) {
+                            assname = associationEnd.getName();
+                        } else {
+                            assname += " " + associationEnd.getName();
+                        }
+
+                        break;
+                    case ASSOC_NONE:
+                        if (association.getSourceID() == null) {
+                            association.setSourceID(associationEnd.getRelatedClassID());
+                        } else {
+                            association.setDestinationID(associationEnd.getRelatedClassID());
+                        }
+                        break;
+                    default:
+                            break;
+                }
+            }
+            if (assname != null) {
+                association.setName(assname);
+            }
+            cd.addRelationship(association);
+        }
+    }
+
+    private List<AssociationEnd> parseAssociationEnd(Node a){
+        return parseGeneric(a, new AssosiationEndParser());
     }
 }

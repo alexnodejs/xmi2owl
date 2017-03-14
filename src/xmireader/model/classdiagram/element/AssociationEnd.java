@@ -1,33 +1,42 @@
 package xmireader.model.classdiagram.element;
 
 
+import xmireader.model.classdiagram.Relationship;
+import xmireader.model.classdiagram.RelationshipType;
 
 /**
  * Created by svitlanamoiseyenko on 3/14/17.
  */
-public class OwnedEnd extends Element {
-    private Boolean isSource;
-    private String connectsTo;
-    public OwnedEnd(String id, String name, String id2, Boolean is){
-        super(id, name);
-        this.isSource = is;
-        this.connectsTo = id2;
-    }
+public class AssociationEnd extends Element {
 
-    public Boolean getIsSource() {
+    private String relatedClassID;
+
+
+
+    private Boolean isSource = false;
+
+    private RelationshipType type;
+    public RelationshipType getType() {
+        return type;
+    }
+    public Boolean getSource() {
         return isSource;
     }
 
-    public void setIsSource(Boolean isSource) {
-        this.isSource = isSource;
+    public AssociationEnd(String id, String name, String relatedClassID, String type){
+        super(id, name);
+        this.relatedClassID = relatedClassID;
+
+        this.type = RelationshipType.getType(type);
+        System.out.println("type: " + this.type);
+        if(type.toString().equals(RelationshipType.ASSOC_AGGREGATION.toString())) {
+            System.out.println("AAA type: " + this.type);
+             this.isSource = true;
+        }
     }
 
-    public String getConnectsTo() {
-        return connectsTo;
-    }
-
-    public void setConnectsTo(String connectsTo) {
-        this.connectsTo = connectsTo;
+    public String getRelatedClassID() {
+        return relatedClassID;
     }
 
 }

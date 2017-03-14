@@ -12,6 +12,7 @@ package xmireader;
 public class XMIConstants {
 
     public static final String XMI_UML_CLASS_NODE = "UML:Class";
+    public static final String XMI_UML_ASSOCIATION_NODE = "UML:Association";
 
     public static final String XMI_UML_CLASS_TYPE = "uml:Class";
     public static final String XMI_UML_INTERFACE_TYPE = "uml:Interface";
@@ -35,4 +36,5 @@ public class XMIConstants {
     
     public static final String XMI_ID = "xmi.id";//"xmi:id";
     public static final String XMI_TYPE = "xmi:type";
+    public static final String XMI_IDREF = "xmi.idref";
 }

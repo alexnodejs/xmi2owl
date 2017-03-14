@@ -16,7 +16,6 @@ public class AttributeParser extends GenericElementParser {
 
     public String getNodeName() {
         return "UML:Attribute";
-        //return "ownedAttribute";
     }
 
     public Attribute getElement(Node n) {

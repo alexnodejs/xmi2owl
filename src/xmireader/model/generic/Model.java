@@ -23,6 +23,7 @@ public abstract class Model {
         return elements;
     }
 
+
     /**
      * @param elements the elements to set
      */

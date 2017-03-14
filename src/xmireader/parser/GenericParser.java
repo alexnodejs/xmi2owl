@@ -36,16 +36,11 @@ public abstract class GenericParser {
 
     public List<Node> getNodesByXMIType(String xmiType) {
         //clearNodes();
-//        for(int i=0;i<d.getChildNodes().getLength();i++){
-//            addNode(d.getChildNodes().item(i));
-//        }
-
         Node n = getNode();
         System.out.println("getNodesByXMIType: " + xmiType + " node: " + n);
 
         List<Node> nodes = new ArrayList<Node>();
         for(int i=0;i<n.getChildNodes().getLength();i++){
-            System.out.println("child: " + n.getChildNodes().item(i));
             q.add(n.getChildNodes().item(i));
         }
         if (n.hasAttributes() && n.getAttributes().getNamedItem(XMIConstants.XMI_TYPE) != null &&
@@ -85,6 +80,8 @@ public abstract class GenericParser {
     }
 
 
+
+
     public List<Node> getNodesByName(String name){
         Node n = getNode();
 
@@ -105,7 +102,6 @@ public abstract class GenericParser {
         }
         
         if(!q.isEmpty()){
-            System.out.println("getNodesByName q not empty: ");
             nodes.addAll(getNodesByName(name));
         }
         return nodes;

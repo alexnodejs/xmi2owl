@@ -25,10 +25,14 @@ public class ClassDiagram extends Model {
     Map<String,CDClass> classes = new HashMap<String, CDClass>();
     Map<String,Interface> interfaces = new HashMap<String, Interface>();
     List<Relationship> relationships = new ArrayList<Relationship>();
-    //List<Relationship> relationships = new ArrayList<Relationship>();
+
+    public List<Relationship> getRelationships() {
+        return relationships;
+    }
+
     public ClassDiagram(){
         elements = new HashMap<String,GenericElement>();
-        //TODO: relations
+        relationships = new ArrayList<Relationship>();
     }
 
     
@@ -38,7 +42,7 @@ public class ClassDiagram extends Model {
     }
 
     public void addRelationship(Relationship relationship){
-       addElement(relationship);
+       //addElement(relationship);
        relationships.add(relationship);
     }
 

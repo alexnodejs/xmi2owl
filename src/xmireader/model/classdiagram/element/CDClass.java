@@ -59,4 +59,5 @@ public class CDClass extends Entity {
     public void setAttributes(List<Attribute> attributes) {
         this.attributes = attributes;
     }
+
 }

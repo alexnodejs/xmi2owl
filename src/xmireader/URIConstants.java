@@ -10,7 +10,8 @@ package xmireader;
  * @author pUf
  */
 public class URIConstants {
-    public static final String URI = "http://www.w3.org/2002/07/owl";
+    public static final String URI = "http://example.org/";
+    public static final String relationshipURI = "http://purl.org/vocab/relationship/";
     //"http://www.dynamickemodely.com/ontologies/dynmod.owl";
     public static final String NS = URI + "#";
 }
