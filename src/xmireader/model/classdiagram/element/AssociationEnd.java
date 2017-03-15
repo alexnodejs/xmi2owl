@@ -9,34 +9,23 @@ import xmireader.model.classdiagram.RelationshipType;
  */
 public class AssociationEnd extends Element {
 
-    private String relatedClassID;
-
-
-
-    private Boolean isSource = false;
+    public String refID;
+    public Boolean isSource = false;
 
     private RelationshipType type;
     public RelationshipType getType() {
         return type;
     }
-    public Boolean getSource() {
-        return isSource;
-    }
 
-    public AssociationEnd(String id, String name, String relatedClassID, String type){
+
+    public AssociationEnd(String id, String name, String refID, String type){
         super(id, name);
-        this.relatedClassID = relatedClassID;
+        this.refID = refID;
 
         this.type = RelationshipType.getType(type);
-        System.out.println("type: " + this.type);
         if(type.toString().equals(RelationshipType.ASSOC_AGGREGATION.toString())) {
-            System.out.println("AAA type: " + this.type);
              this.isSource = true;
         }
-    }
-
-    public String getRelatedClassID() {
-        return relatedClassID;
     }
 
 }

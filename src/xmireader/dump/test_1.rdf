@@ -4,35 +4,36 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
-  <rdf:Description rdf:nodeID="A0">
-    <rdfs:subClassOf rdf:resource="http://example.org/#Anatomy"/>
-    <owl:someValuesFrom rdf:resource="http://example.org/#Cats"/>
-    <owl:onProperty rdf:resource="http://purl.org/vocab/relationship/are similar in"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://example.org/#Reflexes">
     <vcard:N>quick</vcard:N>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/#Claws">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="http://purl.org/vocab/relationship/are with">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/#Cats">
+    <rdfs:subClassOf rdf:resource="http://example.org/#Fields"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/#Fields">
     <vcard:N>other</vcard:N>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/relationship/are similar in">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:nodeID="A0">
+    <rdfs:subClassOf rdf:resource="http://example.org/#Reflexes"/>
+    <owl:someValuesFrom rdf:resource="http://example.org/#Cats"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/relationship/are with"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdfs:subClassOf rdf:resource="http://example.org/#Body"/>
+    <owl:someValuesFrom rdf:resource="http://example.org/#Cats"/>
+    <owl:onProperty rdf:resource="http://purl.org/vocab/relationship/are with"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://example.org/#Body">
     <vcard:N>flexible</vcard:N>
     <vcard:N>strong</vcard:N>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://example.org/#Anatomy">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

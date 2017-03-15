@@ -91,15 +91,14 @@ public abstract class GenericParser {
         }
 
         if (n.getNodeName().equals(name)) {
-            if(n.getAttributes().getNamedItem("generalization") != null) {
-                System.out.println("getNodesByName Found class with name " + n.getAttributes().getNamedItem("name"));
-            }
+//            if(n.getAttributes().getNamedItem(XMIConstants.XMI_ID) != null && name.equals(XMIConstants.XMI_UML_GENERALIZATION_NODE)) {
+//                System.out.println("getNodesByName Found class with name " + n.getAttributes().getNamedItem("name"));
+//
+//            }
+
             nodes.add(n);
         }
 
-        if (n.getNodeName().equals(name)){
-            
-        }
         
         if(!q.isEmpty()){
             nodes.addAll(getNodesByName(name));

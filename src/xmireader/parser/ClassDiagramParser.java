@@ -8,22 +8,14 @@ package xmireader.parser;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.hp.hpl.jena.reasoner.rulesys.builtins.GE;
 import org.w3c.dom.DOMException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import xmireader.XMIConstants;
 import xmireader.model.classdiagram.ClassDiagram;
-import xmireader.model.classdiagram.RelationshipType;
+import xmireader.model.classdiagram.element.*;
 import xmireader.model.generic.Model;
-import xmireader.model.classdiagram.element.CDClass;
-import xmireader.model.classdiagram.element.Method;
-import xmireader.model.classdiagram.element.Attribute;
-import xmireader.model.classdiagram.element.Element;
-import xmireader.model.classdiagram.element.Interface;
-
-import xmireader.model.classdiagram.element.Association;
-import xmireader.model.classdiagram.element.AssociationEnd;
-import xmireader.model.usecasediagram.element.OwnedEnd;
 
 /**
  *
@@ -36,10 +28,14 @@ public class ClassDiagramParser extends GenericParser {
         ClassDiagram cd = new ClassDiagram();
         initializeNodes(d);
         parseClasses(d, cd);
-        initializeNodes(d);
+        //initializeNodes(d);
         //parseInterfaces(d, cd);
         initializeNodes(d);
         parseAssociations(d, cd);
+        initializeNodes(d);
+        parseGeneralizations(d, cd);
+
+
         return cd;
     }
 
@@ -84,6 +80,23 @@ public class ClassDiagramParser extends GenericParser {
         return elements;
     }
 
+    private <T extends Element> T parseGenericElement(Node c, GenericElementParser gep) {
+
+        setNode(c);
+        System.out.println("parseGenericElement gep.getNodeName(): " + gep.getNodeName());
+        List<Node> nodes = getNodesByName(gep.getNodeName());
+        for (Node n : nodes) {
+            System.out.println("parseGenericElement: " + n.getNodeName());
+            if (n.getNodeName().equals(gep.getNodeName())) {
+                System.out.println("parseGenericElement return: " + n);
+                return gep.getElement(n);
+            }
+
+        }
+        return null;
+    }
+
+
     private List<Attribute> parseAttributes(Node c) {
         return parseGeneric(c, new AttributeParser());
     }
@@ -107,10 +120,10 @@ public class ClassDiagramParser extends GenericParser {
                 switch (associationEnd.getType()) {
                     case ASSOC_AGGREGATION:
                         association.setType(associationEnd.getType());
-                        if(associationEnd.getSource()) {
-                            association.setSourceID(associationEnd.getRelatedClassID());
+                        if(associationEnd.isSource) {
+                            association.setSourceID(associationEnd.refID);
                         } else {
-                            association.setDestinationID(associationEnd.getRelatedClassID());
+                            association.setDestinationID(associationEnd.refID);
                         }
                         if (assname == null) {
                             assname = associationEnd.getName();
@@ -121,9 +134,9 @@ public class ClassDiagramParser extends GenericParser {
                         break;
                     case ASSOC_NONE:
                         if (association.getSourceID() == null) {
-                            association.setSourceID(associationEnd.getRelatedClassID());
+                            association.setSourceID(associationEnd.refID);
                         } else {
-                            association.setDestinationID(associationEnd.getRelatedClassID());
+                            association.setDestinationID(associationEnd.refID);
                         }
                         break;
                     default:
@@ -137,6 +150,32 @@ public class ClassDiagramParser extends GenericParser {
         }
     }
 
+    private void parseGeneralizations(Document d, ClassDiagram cd) {
+        System.out.println("==== parseGeneralizations ====");
+        List<Node> generalizations = getNodesByName(XMIConstants.XMI_UML_GENERALIZATION_NODE);
+
+        for (Node a : generalizations) {
+            if(a.getAttributes().getNamedItem(XMIConstants.XMI_ID) != null) {
+
+                String id = a.getAttributes().getNamedItem(XMIConstants.XMI_ID).getNodeValue();
+                System.out.println("parseGeneralizations id: " + id);
+                Generalization generalization = new Generalization(id, "");
+
+                GeneralizationEnd generalizationEndChild = parseGeneralizationEnd(a, GeneralizationNodeType.CHILD);
+                GeneralizationEnd generalizationEndParent = parseGeneralizationEnd(a, GeneralizationNodeType.PARENT);
+                generalization.setSourceID(generalizationEndParent.refID);
+                generalization.setDestinationID(generalizationEndChild.refID);
+
+                cd.addRelationship(generalization);
+            }
+
+        }
+    }
+
+
+    private GeneralizationEnd parseGeneralizationEnd(Node a, GeneralizationNodeType nodeType){
+        return parseGenericElement(a, new GeneralizationEndParser(nodeType));
+    }
     private List<AssociationEnd> parseAssociationEnd(Node a){
         return parseGeneric(a, new AssosiationEndParser());
     }

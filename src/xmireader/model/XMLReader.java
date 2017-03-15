@@ -52,7 +52,7 @@ public class XMLReader {
         parsers.add(new ClassDiagramParser());
         List<Model> parsedModels = new ArrayList<Model>();
         for (GenericParser p : getParsers()) {
-            //System.out.println("XMI parsing: " + p);
+            System.out.println("XMI parsing: " + p);
             parsedModels.add(p.parse(d));
         }
         return parsedModels;

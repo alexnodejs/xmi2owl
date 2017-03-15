@@ -105,15 +105,22 @@ public class OntologyBuilder {
 
                 CDClass cdClassSource = searchClassByID(classDiagram, relationship.getSourceID());
                 CDClass cdClassDestination = searchClassByID(classDiagram, relationship.getDestinationID());
-                System.out.println("relationship destination name: " + cdClassDestination.getName());
-                System.out.println("relationship source name: " + cdClassSource.getName());
 
                 OntClass ontoSource = ontModel.getOntClass(URIConstants.NS + cdClassSource.getName());
                 OntClass ontoDestination = ontModel.getOntClass(URIConstants.NS + cdClassDestination.getName());
-                //ontoDestination.addSubClass(ontoSource);
-                //ontoSource.addDisjointWith(ontoDestination);
-                final OntProperty aggregation = ontModel.createObjectProperty( URIConstants.relationshipURI + relationship.getName());
-                ontoSource.addSubClass(ontModel.createSomeValuesFromRestriction( null, aggregation, ontoDestination ));
+
+                switch (relationship.getType()) {
+                    case GENERALIZATION:
+                        ontoSource.addSubClass(ontoDestination);
+                        break;
+                    default:
+                       final OntProperty aggregation = ontModel.createObjectProperty( URIConstants.relationshipURI + relationship.getName());
+                       ontoSource.addSubClass(ontModel.createSomeValuesFromRestriction( null, aggregation, ontoDestination ));
+                       break;
+                }
+                System.out.println("relationship destination name: " + cdClassDestination.getName());
+                System.out.println("relationship source name: " + cdClassSource.getName());
+
 
             }
     }

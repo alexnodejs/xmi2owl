@@ -1,27 +1,23 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package xmireader.model.classdiagram.element;
 
-import xmireader.model.classdiagram.*;
+import xmireader.model.classdiagram.Relationship;
+import xmireader.model.classdiagram.RelationshipType;
 
 /**
- *
- * @author kane
+ * Created by svitlanamoiseyenko on 3/15/17.
  */
-public class Association extends Relationship {
+public class Generalization extends Relationship {
 
-    public Association(String id, String name){
+    public Generalization(String id, String name){
         super(id, name);
-        setType(RelationshipType.ASSOC_NONE);
+
+        setType(RelationshipType.GENERALIZATION);
     }
 
     @Override
     public String toString(){
         StringBuffer sb = new StringBuffer();
-        sb.append("\nAssociation: ").
+        sb.append("\nGeneralizaition: ").
                 append("\""+getName()+"\"").
                 append(", id: ").
                 append(getId());
